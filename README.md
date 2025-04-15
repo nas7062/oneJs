@@ -54,18 +54,32 @@ array.map(el,index,arr) 새로운 배열 반환
 
 #### 배열 요소 찾기
 
-array.at() index 요소로 찾음 
+array.at() index 요소로 찾음
 at의 특이점은 마이너스도 가능하다. -1이면 마지막 index 가져옴
 
 array.includes() 포함하는지 안하는지 false / true
 
 array.indexOf() 포함하면 index를 반환해줌 포함하지 않으면 -1
 
-array.findIndex(el)  객체의 값이 몇번째 index에 있는지 사용
+array.findIndex(el) 객체의 값이 몇번째 index에 있는지 사용
 
-array.find(el) 특정값의 index가 아니라 그 값을 반환해줌 
+array.find(el) 특정값의 index가 아니라 그 값을 반환해줌
 
-array.filter()  조건이 만족하는 것만 다시 반환해줌 
+#### 배열 반환
+
+array.filter() 조건이 만족하는 것만 다시 반환해줌
 
 array.slice(start,end) end-1까지만 잘라줌.
+
+#### 배열 합치기
+
+arr2.concat(arr1)
+
+#### 배열을 문자열로
+
+arr2.join("")
+
+#### 배열 정렬
+
+arr.sort()
 
