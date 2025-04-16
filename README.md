@@ -90,21 +90,26 @@ const compare = (a,b) =>  {
   else return 0;
 }
 ```
-arr.sort((a,b)=>a-b)  오름차순
-arr.sort((a,b)=>b-a)  내림차순
+
+arr.sort((a,b)=>a-b) 오름차순
+arr.sort((a,b)=>b-a) 내림차순
 
 #### 하나의 값
+
 ```
 arr.reduce((acc,cur,idx) => {
   return acc+cur;
 },0)
 ```
+
 0은 초기값 최후는 acc값을 반환하는데 cur을 다 더한 값이 나온다.
 
 #### isArray
+
 배열인지 아닌지 알려줌 true/false;
 
 ### 구조분해 할당
+
 요소 및 프로퍼티 분해하여 변수에 할당하는 것
 
 ```
@@ -121,4 +126,32 @@ let a=10;
 let b=5;
 [a,b] =[b,a];
 ```
+
+### 비동기
+
+기다리지 않고 병렬적으로 처리
+자바스크립트는 싱글 스레드
+그러므로 비동기로 처리해야 원할하게 웹페이지 돌아감(?)
+
+### callback 지옥
+
+callback 지옥 해결하기 위해 Promise 사용
+프로미스 체이닝 .then 사용
+직관적이고 깔끔한 코드
+
+### async await
+
+async : 비동기 작업 처리
+awiat : 함수의 실행 기다리게함
+promise 보다 가독성이 좋음
+실행순서 예측 가능
+async 사용한 함수에서만 await 사용가능
+비동기 처리 함수에서는 try..catch 사용하자
+
+### 클라이언트 서버 DB
+
+데이터 요청 및 응답
+클라 => 서버 => DB
+클라 <= 서버 <= DB
+
 
