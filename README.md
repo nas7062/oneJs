@@ -83,3 +83,42 @@ arr2.join("")
 
 arr.sort()
 
+```
+const compare = (a,b) =>  {
+  if(a>b) return -1;
+  else if(a<b) return 1;
+  else return 0;
+}
+```
+arr.sort((a,b)=>a-b)  오름차순
+arr.sort((a,b)=>b-a)  내림차순
+
+#### 하나의 값
+```
+arr.reduce((acc,cur,idx) => {
+  return acc+cur;
+},0)
+```
+0은 초기값 최후는 acc값을 반환하는데 cur을 다 더한 값이 나온다.
+
+#### isArray
+배열인지 아닌지 알려줌 true/false;
+
+### 구조분해 할당
+요소 및 프로퍼티 분해하여 변수에 할당하는 것
+
+```
+let nums = [1,2,3];
+let c1,c2,c3;
+[c1,c2,c3] = nums;
+
+```
+
+#### 구조분해 할당으로 값 바꾸기
+
+```
+let a=10;
+let b=5;
+[a,b] =[b,a];
+```
+
