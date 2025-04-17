@@ -190,7 +190,17 @@ addEventListener("click",()=>{})
 
 ### 폼
 
-label for === input,select id 
+label for === input,select id
 
 ### this
+
 자신이 속한 객체(?)
+전역에서 this는 window를 가르킴
+일반 함수는 window가르킴
+객체의 메서드에서 this는 객체를 가르킴
+호출된 방법에 따라 달라짐 호출 된 위치에서 부모(?)
+생성자 함수안에서 this는 생성할 객체를 가르킴
+callback 함수에서는 전역객체 가르킴
+화살표 함수에서는 선언된 위치에 따라 
+그 상위요소 호출 (렉시컬 스코프 응용)
+
