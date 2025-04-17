@@ -178,3 +178,19 @@ classList.add("dog") dog class 추가 가능
 classList.remove("dog) dog class 삭제 가능
 textContent = "age" 요소의 안에 content 변경 가능
 style.color = "red" 요소 color red로 변경가능
+createElement('div') div요소 생성
+createTextNode("말티즈") 말티즈라는 텍스트 생성
+appendChild() 해당 요소의 마지막 자식 요소로 추가
+innerHTML 요소 자체를 모두 반환
+i
+
+### 이벤트
+
+addEventListener("click",()=>{})
+
+### 폼
+
+label for === input,select id 
+
+### this
+자신이 속한 객체(?)
