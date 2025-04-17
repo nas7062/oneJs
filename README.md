@@ -154,4 +154,28 @@ async 사용한 함수에서만 await 사용가능
 클라 => 서버 => DB
 클라 <= 서버 <= DB
 
+### DOM
+
+DOM API를 활용해 DOM을 조작한다.
+id는 1개의 html에 하나
+class 는 여러개 가능
+
+### DOM API
+
+#### 요소 불러오기
+
+getElementById : id를 가진 요소 가져옴
+querySelectorAll : 모든 요소 가져옴 class나 그냥 요소
+quereySelector : 1개의 요소 가져옴 id class 사용가능 id (#) class(.)
+getElementByClassName class 가진 모든 요소 가져옴
+getElementByTagName : Tag를 가진 모든 요소 가져옴
+
+#### 요소 조작
+
+className = "dog" dog로 class 변경 가능
+id = "animal" animal 로 id 변경 가능
+classList.add("dog") dog class 추가 가능
+classList.remove("dog) dog class 삭제 가능
+textContent = "age" 요소의 안에 content 변경 가능
+style.color = "red"  요소 color red로 변경가능
 
