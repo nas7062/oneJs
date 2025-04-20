@@ -214,3 +214,6 @@ callback 함수에서는 전역객체 가르킴
 ### 모듈
 
 특정 기능을 한아ㅢ 단위로 묶어 관리
+script에 type ="module" mjs 파일로 관리하기
+export로 다른 js 파일에서 사용가능 
+다른 파일에서는 import로 불러옴 
