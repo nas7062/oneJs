@@ -239,3 +239,18 @@ CSR 클라이언트 사이드 렌더링
 서버의 부하가 적고 사용자에게 좋은 경험
 검색엔진 최적화 어렵고 초기로딩 시간 길다.
 변화가 필요한 요소만 렌더링 깜빢임 X
+
+### History
+
+history.pushState(page,title,url)
+history.back()
+history.forward()
+
+```
+window.addEventListener('popstate',(e)=> {
+if(e.state) {
+let content = document.getElementById("content");
+content.textContent = event.state
+}
+}) // 페이지 내용 변경 back forward 시 
+```
